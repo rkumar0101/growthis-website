@@ -15,14 +15,23 @@ export default function OpenGraphImage() {
           justifyContent: "space-between",
           background: "#ffffff",
           padding: 72,
+          position: "relative",
         }}
       >
         <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
           <div style={{ fontSize: 18, color: "#111827" }}>GrowthAlis</div>
-          <div style={{ fontSize: 62, fontWeight: 700, color: "#101010", lineHeight: 1.05 }}>
-            Growth + automation
-            <br />
-            that converts.
+          <div
+            style={{
+              fontSize: 62,
+              fontWeight: 700,
+              color: "#101010",
+              lineHeight: 1.05,
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <span>Growth &amp; automation</span>
+            <span>that converts.</span>
           </div>
           <div style={{ fontSize: 22, color: "rgba(0,0,0,0.65)", maxWidth: 850 }}>
             Websites, funnels, and systems built like a product.
@@ -35,7 +44,7 @@ export default function OpenGraphImage() {
           <div style={{ fontSize: 18, color: "rgba(0,0,0,0.65)" }}>growthalis.com</div>
         </div>
 
-        {/* subtle arcs */}
+        {/* subtle circles */}
         <div
           style={{
             position: "absolute",
@@ -45,6 +54,7 @@ export default function OpenGraphImage() {
             height: 520,
             borderRadius: 9999,
             background: "rgba(250,204,21,0.16)",
+            display: "flex",
           }}
         />
         <div
@@ -56,10 +66,11 @@ export default function OpenGraphImage() {
             height: 620,
             borderRadius: 9999,
             background: "rgba(225,29,46,0.10)",
+            display: "flex",
           }}
         />
       </div>
     ),
-    size
+    { width: 1200, height: 630 }
   );
 }
